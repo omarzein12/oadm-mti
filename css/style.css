@@ -1,0 +1,134 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+.navholder {
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.navholder img {
+    width: 100px;
+}
+.linkhold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul a {
+    padding-left: 50px;
+    font-size: 30px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+color:#a7d5d3 ;
+font-weight: 700;
+}
+ul a ::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #a7d5d3;
+    transition: width .3s;
+}
+ul a :hover::after {
+    width: 100%;
+}
+.background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #a7d5d3;
+    background-repeat: repeat-y;
+}
+.bg1{
+    position: relative;
+}
+.bg1 img {
+position: relative;
+width: 100%;
+}
+.ghold {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+transform: translateY(110px);
+margin: auto;
+}
+.ghold a {position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+border-radius: 10px;
+width: 100%;
+text-align: center;
+margin-top: 10px;
+background-color:#a7d5d3 ;
+border: 2px solid white;
+
+}
+.ghold{
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 750px;
+}
+
+.ghold a :hover {
+    background-color: white;
+    color: #a7d5d3;
+    border-radius: 10px;
+    width: 100%;
+
+}
+@media (max-width:767px){
+    .ghold {
+        position: relative;
+        z-index: 1;
+        width: 250px;
+    margin: auto;
+    transform: translateY(30px);
+
+    }
+    .navholder {
+        position: relative;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding-left: 0;
+        padding-right: 40px;
+    }
+    ul a {
+        padding-left: 20px;
+        font-size: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color:#a7d5d3 ;
+    font-weight: 700;
+    }
+    .ghold a {
+        height: 70px;
+    }
+}
+
